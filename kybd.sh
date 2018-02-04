@@ -17,7 +17,7 @@ else
 fi
 
 # check if we have dfu-programmer
-if command -v  df-programmer 2>/dev/null; then
+if command -v dfu-programmer 2>/dev/null; then
     echo "dfu-programmer is installed"
 else
     echo "Installing dfu-programmer"
