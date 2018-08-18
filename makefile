@@ -15,13 +15,11 @@ flash:
 	cd $(QMK_DIR);\
 	make $(KEYBOARD):$(KEYMAP):dfu
 
-clean:
-	cd $(QMK_DIR);\
-	make clean;
-
 update:
 	cd $(QMK_DIR);\
 	git pull --ff-only
 
+edit:
+	cd $(MYPATH); vim keymap.c
 
-PHONY: init udpate clean
+PHONY: init udpate clean flash edit
